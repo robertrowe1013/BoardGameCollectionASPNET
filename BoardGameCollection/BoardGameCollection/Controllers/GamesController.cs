@@ -70,7 +70,7 @@ namespace BoardGameCollection.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,PlayerCount")] Game game)
+        public async Task<IActionResult> Create([Bind("Id,Name,MinPlayerCount,MaxPlayerCount")] Game game)
         {
             if (ModelState.IsValid)
             {
@@ -104,7 +104,7 @@ namespace BoardGameCollection.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,PlayerCount")] Game game)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,MinPlayerCount,MaxPlayerCount")] Game game)
         {
             if (id != game.Id)
             {
