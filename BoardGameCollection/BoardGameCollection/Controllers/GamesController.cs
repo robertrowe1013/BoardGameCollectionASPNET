@@ -26,6 +26,18 @@ namespace BoardGameCollection.Controllers
             return View(await _context.Game.ToListAsync());
         }
 
+        // GET: Games/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
+        // POST: Games/ShowSearchResults
+        public async Task<IActionResult> ShowSearchResults()
+        {
+            return View();
+        }
+
         // GET: Games/Details/5
         public async Task<IActionResult> Details(int? id)
         {
