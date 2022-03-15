@@ -19,9 +19,14 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PlayerCount" class="control-label"></label>
-                <input asp-for="PlayerCount" class="form-control" />
-                <span asp-validation-for="PlayerCount" class="text-danger"></span>
+                <label asp-for="MinPlayerCount" class="control-label"></label>
+                <input asp-for="MinPlayerCount" class="form-control" />
+                <span asp-validation-for="MinPlayerCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaxPlayerCount" class="control-label"></label>
+                <input asp-for="MaxPlayerCount" class="form-control" />
+                <span asp-validation-for="MaxPlayerCount" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
