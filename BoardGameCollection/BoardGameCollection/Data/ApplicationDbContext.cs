@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BoardGameCollection.Models;
 
 namespace BoardGameCollection.Data
 {
@@ -9,5 +10,6 @@ namespace BoardGameCollection.Data
             : base(options)
         {
         }
+        public DbSet<BoardGameCollection.Models.Game> Game { get; set; }
     }
 }
